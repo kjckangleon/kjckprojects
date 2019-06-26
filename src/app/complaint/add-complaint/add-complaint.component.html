@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="complaintForm" (submit)="submit()">
+    <div class="col-lg-12">
+      <label>Name:</label>
+      <input class="form-control" type="text" formControlName='name' required>
+    </div>
+    <div class="col-lg-12">
+      <label>Family Name:</label>
+      <input type="text" class="form-control" formControlName='family_name' >
+    </div>
+    <div class="col-lg-12">
+      <label>Address:</label>
+      <input type="text" class="form-control" formControlName='address'>
+    </div>
+    <div class="col-lg-12">
+      <label>Date and Time:</label>
+      <input type="datetime-local" class="form-control" formControlName='date_and_time'>
+    </div>
+    <div class="col-lg-12">
+      <label>Your complaint:</label>
+      <textarea class="form-control" formControlName='complaint' rows="5"></textarea>
+    </div>
+    <div class="col-lg-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <br>
+</div>

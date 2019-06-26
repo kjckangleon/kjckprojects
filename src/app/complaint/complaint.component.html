@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-light">
+    <thead class="thead-light">
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let complaint of complaint">
+        <td>{{ complaint.name }}</td>
+        <td>{{ complaint.date_and_time | date: 'MM/dd/yyyy HH:mm' }}</td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="deleteComplaint(complaint.id)">Delete</button>
+          <button type="button" class="btn btn-primary" (click)="viewComplaint(complaint.id)">View</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

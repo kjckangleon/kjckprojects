@@ -1,0 +1,22 @@
+<div class="container" *ngIf="isDone">
+  <div class="col-lg-12">
+    <label>Name: </label>
+    <span>{{ complaint.name }}</span>
+  </div>
+  <div class="col-lg-12">
+    <label>Family Name: </label>
+    <span>{{ complaint.family_name }}</span>
+  </div>
+  <div class="col-lg-12">
+    <label>Address: </label>
+    <span>{{ complaint.address }}</span>
+  </div>
+  <div class="col-lg-12">
+    <label>Date and Time: </label>
+    <span>{{ complaint.date_and_time | date:'MM/dd/yyyy HH:mm' }}</span>
+  </div>
+  <div class="col-lg-12">
+    <label>Complaint: </label>
+    <span>{{ complaint.complaint }}</span>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Text to JEJE text</h1>
+      <p class="lead">Jejemon (Tagalog pronunciation: [ˈdʒɛdʒɛmɔ̝n]) is a popular culture phenomenon in the Philippines. According to Urban Dictionary, a Jejemon is a person "who has managed to subvert the English language to the point of incomprehensibility." [1] The Philippine Daily Inquirer describes Jejemons as a "new breed of hipster who have developed not only their own language and written text but also their own subculture and fashion." (From wiki!)</p>
+      <hr class="my-4">
+      <textarea class="form-control" [(ngModel)]="toJejemon" row="20"></textarea>
+      <br>
+      <div class="col-lg-12">
+          <button type="button" class="btn btn-primary" (click)="convertToJejemon()">Convert to JEJE now!!</button>
+      </div>
+      <br>
+      <p>{{ finalJejemon }}</p>      
+      <!-- <img class="imgUrl" src={{jejeImageUrl}} *ngIf="isLoading"/> -->
+    </div>
+  <!-- <div class="col-lg-12">
+    <label>Convert your sayings to JEJE</label>
+    
+  </div>
+  <div class="col-lg-12">
+    
+    
+  </div> -->
+</div>
